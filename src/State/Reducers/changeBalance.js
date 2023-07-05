@@ -14,6 +14,12 @@ const changeNumber = (state = initialState, action) => {
             bal: state.bal - action.payload
         }
     }
+    else if(action.type === 'RESET') {
+        return {
+            ...state,
+            bal: action.payload
+        }
+    }
     return state;
 }
 

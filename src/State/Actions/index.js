@@ -1,13 +1,20 @@
-export const incBalance = () => {
+export const incBalance = (num) => {
     return {
         type: 'INCREMENT',
-        payload: ''
+        payload: num
     }
 }
 
-export const desBalance = () => {
+export const desBalance = (num) => {
     return {
         type: 'DECREMENT',
-        payload: ''
+        payload: num
+    }
+}
+
+export const resetBalance = (num) => {
+    return {
+        type: 'RESET',
+        payload: num
     }
 }
